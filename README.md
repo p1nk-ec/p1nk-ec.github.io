@@ -1,1 +1,1 @@
-# https://p1nk-ec.github.io
+# http://p1nk-ec.github.io
