@@ -1,0 +1,16 @@
+body{
+    min-height: 800px;
+    display: flex;
+    border: 5px solid black;
+    justify-content: space-between;
+    align-items: center;  /*this align items in a crsoss axis*/
+    flex-wrap: wrap;
+}
+.box
+{   display: flex;
+    height: 200px;
+    width: 200px;
+    background-color: rgb(140, 140, 219);
+    font-size: 30pt;
+    border: 2px solid white;
+}   

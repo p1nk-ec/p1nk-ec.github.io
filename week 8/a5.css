@@ -1,0 +1,39 @@
+.img{
+    height: 400px;
+    width: 400px;
+}
+.clock-block{
+    background-color: rgb(228, 206, 228);
+    background-image: url('/images/clockimage.png');
+    height: 800px;
+    width: 800px;
+    background-size: 800px 800px;
+    position: relative;
+
+
+}
+.hand1, .hand2
+{
+    /* background-image: url('/images/hand.png'); */
+    position: absolute;
+    top:100px;
+    left: 0;
+    bottom: 50px;
+    height: 400px;
+    width:  400px;
+    background-size:400px 400px;
+    
+    
+}
+
+.hand2 
+{  
+    height: 300px;
+    width: 300px;
+    animation: moveHand 20s linear infinite;
+}
+
+@keyframes moveHand
+{
+    100%{transform: rotate(360deg)};
+}
