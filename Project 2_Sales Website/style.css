@@ -1,0 +1,418 @@
+body{
+    background: linear-gradient(to right, rgb(232, 198, 226), rgb(144, 156, 208), rgb(186, 157, 173));
+   
+
+}
+p{
+    font-family: fantasy;
+}
+ .title{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+     
+}
+h1 {
+    font-family: cursive;
+    color: rgba(171, 79, 166, 0.962);
+    margin: 0;
+    font-size: 35px;
+    padding: 10px;
+    animation: title 7s infinite;
+
+}
+@keyframes title{
+    0% {background-color: rgb(144, 144, 198); left: 20px; top: 0px; border-radius: 10%;}
+    50%{background-color: rgb(181, 161, 197); left: 0px; top: 0px; border-radius: 50%;}
+    100%{background-color: rgb(173, 151, 110); left: 0px; top: 0px;border-radius: 80%;}
+    }
+
+
+.slogan{
+    margin-top: 100px;
+    color: rgb(197, 72, 72);
+    font-family: fantasy;
+    animation: slogan 7s infinite;
+   
+}
+@keyframes slogan{
+
+    0%{ transform: translateX(200px); opacity:1;}
+    100%{transform: translateX(0px);opacity:0.5;}
+}
+
+
+.title>img{
+    width: 10%;
+    height: 30%;
+    border-radius: 30px;
+    border: 2px solid #c489c0;  
+    margin: 5px;
+    animation: zoom 7s infinite;
+
+    
+}
+@keyframes zoom{
+    0%{transform: scale(0);}
+    50%{transform: scale(1)}
+    100% {transform: rotate(-90deg);}
+}
+.hero{
+    background-image: url('images/intro_img2.jpg');
+    background-size: 100% 100%;
+    position: relative;
+    height: 500px;
+}
+.hero-txtbox{
+    position: absolute; 
+    top: 70%; 
+    left: 35%; 
+    transform: translate(-50%, -50%); /* Offset by half of its width/height for perfect centering */
+    background-color: rgba(241, 236, 206, 0.5); /* Semi-transparent background */
+    color: white; 
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid rgb(188, 231, 235);
+}
+.frame{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.text-slider
+{   
+    width: 300%;
+    height: 100%;
+    animation: slides 7s;
+}
+
+/* .text-slider>div */
+.s1{
+    background: linear-gradient(to right, rgb(183, 196, 138), rgb(176, 215, 215), rgb(242, 187, 217));
+}
+.s2{
+    background: linear-gradient(to right, rgb(204, 160, 207), rgb(176, 215, 215), rgb(242, 187, 217));
+}
+.s3{
+    background: linear-gradient(to right, rgb(187, 198, 148), rgb(176, 215, 215), rgb(242, 187, 217));
+}
+.text-slider>div{
+
+    color: rgb(87, 83, 83);
+    width: 33.33%;
+    float: left;
+    height:100%;
+    text-align: center;
+
+}
+
+@keyframes slides{
+
+    0% {margin-left:0%;}
+    25% {margin-left:-100%;}
+    50% {margin-left:-200%;}
+    75% {margin-left:-200%;}
+    100% {margin-left:-300%;}
+   
+}
+
+.boxes{
+    display: flex;
+    /* justify-content: spaced-evenly; */
+    align-items: center;
+    width: 100%;
+    height:100%;
+    float: left;
+    position: relative;
+    padding: 20px;
+}
+.inside-txtbox{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    /* transform: translateX(-50%); */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border:1px solid white;
+    border-radius: 5px;
+    background-color: rgba(90, 80, 80, 0.6); 
+    width: 15%;
+    height: auto;
+}
+.boxes>img{
+    width: 30%;
+    height:auto;
+    /* padding: 50px; */
+    padding-left: 180px;;
+   
+}
+
+.textbox{
+
+    width: 20%;   
+    height: 70%;           
+    padding: 70px;            
+    background: linear-gradient(to right, rgb(202, 208, 181), rgb(137, 191, 191), rgb(242, 187, 217));
+    color: white;             
+    border-radius: 5px;       
+    box-shadow: 0 5px 8px rgba(186, 179, 200, 0.6);
+    margin: 20px auto;  
+    text-align: center;
+}
+
+
+h2{
+    margin-bottom: 5px;         
+    
+}
+
+.textbox>p{
+    font-size: 12px;      
+}
+
+a{
+    text-decoration: none;
+}
+
+.products-container{
+    display: flex;
+    justify-content: spaced-around;
+    flex-wrap: wrap;
+    /* width: 100%; */
+    gap: 20px;
+    padding: 20px;
+  
+   
+}
+   
+.prod1, .prod2, .prod3{
+    width: 30%;
+    text-align: center;
+    box-sizing: border-box;
+}
+.prod1 img, .prod2 img, .prod3 img
+{
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    object-fit: contain;
+}
+.btn {
+    display: inline-block;
+    background-color: rgb(28, 29, 29);
+    font-size: 12px;
+    border-radius: 1px;
+    padding: 8px 18px;
+    color: rgb(156, 184, 208);
+    margin-top: 10px;
+    position: relative; /* Needed for positioning the tooltip */
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn:hover{
+    background-color: rgb(192, 207, 221);
+    color: rgb(125, 121, 121);
+}
+.btn:hover::after{
+    opacity: 1; 
+    visibility: visible;
+}
+.btn::after{
+    content: "Add to Shopping Cart"; 
+    position: absolute;
+    bottom: 90%; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #71736e; 
+    color: #dfdfdf; 
+    padding: 10px 10px;
+    border-radius: 2px;
+    font-size: 15px;
+    white-space: nowrap;
+    opacity: 0; 
+    visibility: hidden; 
+    transition: opacity 0.2s, visibility 0.4s;
+    z-index: 100; 
+}
+.products-container>p{
+    margin: 5px 0;
+}
+
+/* name of body lotions */
+h4 {
+    font-size: 15px;
+    margin: 10px 0;
+    color: rgb(122, 109, 35);
+    font-family: fantasy;
+  }
+
+  p {
+    font-size: 1em;
+    margin: 5px 0;
+  }
+  
+
+  .SuaveSKIN-Body-Lotion-header, .SuaveSKIN-giftsSets-header{
+    font-family: cursive;
+    color: rgba(171, 79, 166, 0.962);
+    margin: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+  
+  } 
+
+/* button MODAL "KEEP SHOPPING"*/
+  .btn-modal{
+    background-color: rgb(31, 35, 36);
+    font-size: 10px;
+    border-radius: 8px;
+    padding: 10px;
+    text-decoration: none;
+    color: aliceblue;
+    text-decoration: none;
+    position: relative;
+    
+  }
+
+
+
+/* modal BOX */
+.modal-box{
+    /* background color when open mod box */
+    background-color: rgba(36, 97, 1, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    display: flex;
+    
+}
+
+/* images in modal box */
+.modal-box>div>img{
+    height: 50%;
+    width: 40% ;
+    margin-right: 10px;
+    /* display: flex; */
+
+
+}
+/* div-modal */
+.modal-box>div{
+    /* mod box info  */
+    background-color: rgb(253, 253, 253);
+    width: 40%;
+    margin: auto;
+    margin-top: 10%;
+    text-align: center;
+    position: relative;
+    float: left;
+    padding: 30px;
+}
+
+.desc-mod-box{
+    position: relative;
+}
+.btn-modal{
+    position: relative;
+    margin-bottom: 10px;
+}
+.modal-box:target
+{
+    opacity:1;
+    pointer-events:auto;
+
+}
+.x-close{
+
+    background-color: rgb(106, 120, 122);
+    font-size: 10px;
+    border-radius: 8px;
+    padding:5px;
+    text-decoration: none;
+    color: aliceblue;
+    text-decoration: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+}
+.x-close:hover{
+    background-color: rgb(192, 86, 86);
+}
+
+.btn-modal:hover{
+    background-color: gray;
+}
+
+.desc-mod-box
+{   flex-wrap: nowrap;
+    background-color: gray;
+}
+
+.wrapper{
+  
+    display: flex;
+    flex-direction: column;
+    justify-items: space-between;
+    /* margin-left: 50px; */
+    /* ;
+    gap: 90px; */
+    background-color: black;
+    padding: 20px;
+    
+    
+}
+.contact-container{
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    
+    align-items: row;
+    
+}
+
+h5{
+    color: white;
+}
+
+.contact-container>div>p{
+    color: white;
+}
+
+
+
+
+
+.social{
+    padding: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.social>img{
+    width: 50px;
+    height: auto;
+}
+
+footer{
+    color: white;
+    background-color: black;
+    padding: 20px;
+}
+
+.social>h5{
+    color: white;
+    padding-bottom: 50px;
+
+}

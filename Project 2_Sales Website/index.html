@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2 Sales Site </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Title with moving with logo  -->
+    <div class="title">
+      <img src="logos/logo.png" alt="">
+      <h1>SuaveSKIN </h1>
+      <h3 class="slogan">Where Softness Meets Luxury</h3>
+    </div>
+
+    <!-- slider with "free shipping" on top of hero image--> 
+    <!-- hero image with transparent inside -->
+ <div class="frame"> 
+    <div class="text-slider"> 
+        <div class="s1"><p>Special holidays offer! Only for $14.99  </p></div>
+        <div class="s2"><p><i>Free Shipping</i> in the US only  with a minimum of $39.99</p></div>
+        <div class="s3"><p><b>Code: XMAS24</b></p></div>
+    </div>
+</div>
+    <div class="hero"></div>
+        <div class="hero-txtbox">
+            <p>At SuaveSKIN, we blend the finest natural ingredients to nourish and hydrate your skin. Our hand lotions and body creams are enriched with shea butter, aloe vera, and vitamin E to provide deep moisture, repair dry skin, and leave you feeling soft and rejuvenated. With each application, indulge in nature’s soothing touch for silky-smooth skin, every day./p>
+        </div>
+    <br>
+
+    <!-- 2 by 1 boxes- left side image- right side textbox -->
+    <div class="boxes">
+        <div class="image-text"></div>
+            <img src="images/intro_img1.jpg" alt="">
+                <div class="inside-txtbox">
+                    <h3>Beautiful Skincare</h3>
+                    <p>Our Simple Ingredients Makes Your Skin Glow </p>
+                </div>
+        <div class="textbox">
+            <h2>Skin Care</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At eligendi amet animi, 
+                ipsum quibusdam ad neque nulla officiis ut quas, obcaecati illo quis harum veritatis numquam dolorum! 
+                Dolor, minima cumque!</p></div>
+    </div>
+
+    <br>
+
+    <!-- items: body lotion -->
+    <h2 class="SuaveSKIN-Body-Lotion-header">SuaveSKIN Body Lotion</h2>
+    <hr>
+
+    <div class="products-container" id="lotions-container">
+            <div class="prod1">
+               <div class="prod-img"><img src="products/item1.png" alt="item1"></div> 
+                <h4>Cherry Lavender Body Lotion</h4>
+                <p class="name_items">The essence of water</p>
+                <p class="description">Hand lotion 120ml</p>
+                <p class="price">$16.99</p>
+                <a class="btn"href="#item1">ADD TO BAG</a>
+            </div>
+            <div class="prod2">
+                <img src="products/item2.png" alt="">
+                <h4>Cherry Grape Hand Lotion</h4>
+                <p class="name_items">The essence of cherry</p>
+                <p class="description">Hand lotion 150ml</p>
+                <p class="price">$22.99</p>
+                <a class="btn"href="#item2">ADD TO BAG</a>
+            </div>
+            <div class="prod3">
+                <div><img src="products/item3.png" alt=""></div>
+                 <h4>Shea Lavender Body Lotion</h4>
+                <p class="name_items">The essence of Lavender</p>
+                <p class="description">Hand lotion 200ml</p>
+                <p class="price">$29.99</p>
+                <a class="btn"href="#item3">ADD TO BAG</a>
+            </div>
+        
+    </div>
+     
+  
+                  <!-- items: giftsets -->
+    <h2 class="SuaveSKIN-giftsSets-header">SuaveSKIN Gift Sets</h2>
+    <hr>
+    <div class="products-container" id="giftset-container">
+       
+            <div class="prod1" id="prod1-gift">
+               <div class="prod-img"><img src="products/gift_set1.png" alt="item1"></div> 
+                <h4>The Cherry Lavender Gift Set</h4>
+                <p class="name_items">The essence of water</p>
+                <p class="description">Hand lotion 120ml | Body Lotion | Free Samples with Pouch</p>
+                <p class="price">$59.99</p>
+                <a class="btn"href="#gift_set1">ADD TO BAG</a>
+            </div>
+            <div class="prod2" id="#prod2-gift">
+                <img src="products/gift_set2.png" alt="">
+                <h4>The Cherry Grape Gift Set</h4>
+                <p class="name_items">The essence of cherry</p>
+                <p class="description">Hand lotion 150ml | Body Lotion | Free Samples with Pouch</p>
+                <p class="price">$59.99</p>
+                <a class="btn"href="#gift_set2">ADD TO BAG</a> 
+            </div>
+            <div class="prod3" id="prod3-gift">
+                <div><img src="products/gift_set3.png" alt=""></div>
+                 <h4>The Shea Lavender Gift Set</h4>
+                <p class="name_items">The essence of Lavender</p>
+                <p class="description">Hand lotion 200ml | Body Lotion | Free Samples with Pouch</p>
+                <p class="price">$59.99</p>
+                <a class="btn"href="#gift_set3">ADD TO BAG</a>
+            </div>
+        
+    </div>
+     
+
+                <!-- MODAL Window for body lotion items -->
+    <div class="modal-box" id="item1">
+        <div>
+            <a class="x-close"href="#lotions-container">X</a>
+            <h4 class="add-cart">Added to Shopping Cart!</h4>
+            <hr>   
+            <img src="products/item1.png" alt="item1">
+            <div class="mod-item-info">
+                <h4>The Cherry Lavender Gift Set</h4>
+                <p class="name_items">The essence of water</p>
+                <p class="description">Hand lotion 120ml | Body Lotion | Free Samples with Pouch</p>
+                <p class="price">$59.99</p>
+            </div>
+            <div class="desc-mod-box"> 
+                <p class=>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, qui dolorem. Ducimus eum quibusdam odit? Minus, quos iure. Eos odit deserunt unde officiis aliquam tempore a eaque, rem earum modi?</p>
+            <a class="btn-modal"href="#lotions-container">Keep Shopping</a>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="modal-box" id="item2" >
+        <div>
+            <a class="x-close"href="#lotions-container">X</a>
+            <h4 class="add-cart">Added to Shopping Cart!</h4>
+            <hr>   
+            <img src="products/item2.png" alt="item1">
+            <h4>Cherry Grape Hand Lotion</h4>
+            <p class="name_items">The essence of cherry</p>
+            <p class="description">Hand lotion 150ml</p>
+            <p class="price">$22.99</p>
+            <p class="desc-mod-box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, qui dolorem. Ducimus eum quibusdam odit? Minus, quos iure. Eos odit deserunt unde officiis aliquam tempore a eaque, rem earum modi?</p>
+            <a class="btn-modal"href="#prod2">Keep Shopping</a>
+        </div>
+    </div>
+
+    <div class="modal-box" id="item3">
+      <div>
+        <a class="x-close"href="#lotions-container">X</a>
+        <h4 class="add-cart">Added to Shopping Cart!</h4>
+        <hr>   
+        <img src="products/item3.png" alt="item3">
+        <h4>Shea Lavender Body Lotion</h4>
+            <p class="name_items">The essence of Lavender</p>
+            <p class="description">Hand lotion 200ml</p>
+            <p class="price">$29.99</p>
+        <p class="desc-mod-box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, qui dolorem. Ducimus eum quibusdam odit? Minus, quos iure. Eos odit deserunt unde officiis aliquam tempore a eaque, rem earum modi?</p>
+        <a class="btn-modal"href="#lotions-container">Keep Shopping</a>
+      </div>
+    </div>
+
+
+                        
+                      <!-- modal window for body GIFT SETS items -->
+   <div class="modal-box" id="gift_set1">
+    <div>
+        <a class="x-close"href="#lotions-container">X</a>
+        <h4 class="add-cart">Added to Shopping Cart!</h4>
+        <hr>   
+        <img src="products/gift_set1.png" alt="item1">
+        <h4>The Cherry Lavender Gift Set</h4>
+        <p class="name_items">The essence of water</p>
+        <p class="description">Hand lotion 120ml | Body Lotion | Free Samples with Pouch</p>
+        <p class="price">$59.99</p>
+        <p class="desc-mod-box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, qui dolorem. Ducimus eum quibusdam odit? Minus, quos iure. Eos odit deserunt unde officiis aliquam tempore a eaque, rem earum modi?</p>
+        <a class="btn-modal"href="#giftset-container">Keep Shopping</a>
+    </div>
+</div>
+
+<div class="modal-box" id="gift_set2">
+    <div>
+        <a class="x-close"href="#lotions-container">X</a>
+        <h4 class="add-cart">Added to Shopping Cart!</h4>
+        <hr>   
+        <img src="products/gift_set2.png" alt="item1">
+        <h4>The Cherry Grape Gift Set</h4>
+        <p class="name_items">The essence of cherry</p>
+        <p class="description">Hand lotion 150ml | Body Lotion | Free Samples with Pouch</p>
+        <p class="price">$59.99</p>
+        <p class="desc-mod-box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, qui dolorem. Ducimus eum quibusdam odit? Minus, quos iure. Eos odit deserunt unde officiis aliquam tempore a eaque, rem earum modi?</p>
+        <a class="btn-modal"href="#giftset-container">Keep Shopping</a>
+    </div>
+</div>
+
+<div class="modal-box" id="gift_set3">
+  <div>
+    <a class="x-close"href="#lotions-container">X</a>
+    <h4 class="add-cart">Added to Shopping Cart!</h4>
+    <hr>   
+    <img src="products/gift_set3.png" alt="item3">
+    <h4>The Shea Lavender Gift Set</h4>
+    <p class="name_items">The essence of Lavender</p>
+    <p class="description">Hand lotion 200ml | Body Lotion | Free Samples with Pouch</p>
+    <p class="price">$59.99</p>
+    <p class="desc-mod-box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, qui dolorem. Ducimus eum quibusdam odit? Minus, quos iure. Eos odit deserunt unde officiis aliquam tempore a eaque, rem earum modi?</p>
+    <a class="btn-modal"href="#giftset-container">Keep Shopping</a>
+  </div>
+</div>
+
+<br><br><br>
+
+    <!-- contact and help center -->
+<div class="wrapper"></div>
+    <div class="contact-container">
+        
+        
+         <div class="end-section"><h5>HELP</h5><p>Customer Services</p><p>Live Chat</p></div>
+         <div class="end-section"><h5>ACCOUNT</h5><p>Your Account</p><p>Reset Password</p></div>
+         <div class="end-section"><h5>SUBSCRIBE</h5><p>Email</p><p>Newsettler</p></div>
+         <div class="end-section"><h5>MEMBER PORTAL</h5><p>Codes</p><p>Login</p></div>
+         
+    </div>
+   
+    <div class="social">
+        <hr>
+        <h5 class="connect">CONNECT WITH SUAVESKIN </h5>
+        <img src="logos/facebook.png" alt="">
+        <img src="logos/instagram.png" alt="">
+        <img src="logos/youtube.png" alt="">
+        <img src="logos/pin.png" alt="">
+        <img src="logos/twitter.png" alt="">
+        
+    </div>
+</div>        
+       
+<footer style="text-align: center;">
+    <p>Copyright &copy; 2024 SuaveSKIN Elisabeth Chiang. All rights are reserved.</p>
+</footer>
+    
+</body>
+</html>
