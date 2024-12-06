@@ -1,0 +1,52 @@
+
+       
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2e2e2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-control {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+.greeting-message {
+    font-size: 18px;
+    margin-top: 15px;
+    color: #1f1f77;
+}
+.greeting-block {
+    background: linear-gradient(to right, rgb(232, 198, 226), rgb(168, 175, 207), rgb(162, 190, 179));
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    width: 400px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #e7e7e7;
+    color: rgb(14, 12, 12);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #4f5357;
+}
+
