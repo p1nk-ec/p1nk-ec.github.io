@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Pixels World</title>
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Pixels World</a>
+            <ul class="nav nav-pills nav-fill">
+                <li class="nav-item">
+                  <a class="nav-link  " href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">New Products</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#">Virtual Chat</a>
+                </li>
+        </div>
+        
+    </nav>
+
+    <!-- Container for products -->
+    <div class="container my-5">
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="products/prod1.jpg" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 1</h5>
+                        <p class="card-text">Short description of Product 1.</p>
+                        <!-- Button to open modal -->
+                        <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#productModal1">More Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="products/prod2.jpg" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 2</h5>
+                        <p class="card-text">Short description of Product 2.</p>
+                        <!-- Button to open modal -->
+                        <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#productModal2">More Info</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Product 1 -->
+    <div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel1">Product 1 Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="products/prod1.jpg" class="card-img-top" alt="Product 1">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor explicabo repudiandae aliquid, ratione fugit non et vel quos placeat at exercitationem in possimus nostrum a, ipsa id modi quam consectetur!</p>
+                    <ul>
+                        <li>Feature 1</li>
+                        <li>Feature 2</li>
+                        <li>Feature 3</li>
+                    </ul>
+                    <!-- Quantity input -->
+                <div class="mb-3">
+                    <label for="quantityInput" class="form-label">Quantity</label>
+                    <input type="number" class="form-control" id="quantityInput" value="1" min="1">
+                    <!-- <button type="button" class="btn btn-primary" id="addToCartButton">Add to Cart</button> -->
+                   
+                </div>
+                </div>
+                <button type="button" class="btn btn-primary" id="addToCartButton">Add to Cart</button>
+                <div class="modal-footer">
+                    
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+                   
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Product 2 -->
+    <div class="modal fade" id="productModal2" tabindex="-1" aria-labelledby="productModalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel2">Product 2 Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="products/prod2.jpg" class="card-img-top" alt="Product 2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem est omnis quae aperiam exercitationem obcaecati facilis ut illum hic ratione, voluptate delectus pariatur doloremque necessitatibus quasi sint, rem tempora eveniet?.</p>
+                    <ul>
+                        <li>Feature A</li>
+                        <li>Feature B</li>
+                        <li>Feature C</li>
+                    </ul>
+                </div>
+                <button type="button" class="btn btn-primary" id="addToCartButton">Add to Cart</button>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+    <script src="assignment_10.js"></script>
+</body>
+
+</html>
