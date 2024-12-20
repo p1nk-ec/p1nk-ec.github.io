@@ -1,0 +1,115 @@
+h2, h1{
+    margin: 15px;
+}
+
+.hero{
+    height:400px;
+    background-image: url('nyc.jpg');
+    background-size: 100% 100%;
+    position: relative;
+    background-color: rgb(188, 215, 206);
+    
+}
+
+.block1{
+    background-color: rgba(252, 252, 251, 0.5);
+    position: absolute;
+    top:100px;
+    left:100px;
+    bottom:12px;
+    right:12px;
+    width:30%;
+    height: 30%;
+}
+
+a{
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.image-container {
+    position: relative;
+    width: 80%;
+    height: auto;
+    overflow: hidden;  
+}
+
+
+.image {
+    position: absolute;
+    width: 100px;  
+    height: 100px;
+    object-fit: cover;
+    transition: opacity 1s ease;
+}
+
+
+.image2 {
+    opacity: 0;
+}
+
+
+@keyframes throwAndTransform {
+    0% {
+        left: 0;
+        top: 50%;
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        left: 50%;
+        top: 30%;
+        opacity: 0.5;
+        transform: scale(1.2);  
+    }
+    100% {
+        left: 100%;
+        top: 50%;
+        opacity: 0;
+        transform: scale(0.8);  
+    }
+}
+
+.image-container:hover .image1 {
+    animation: throwAndTransform 3s forwards;  
+}
+
+.image-container:hover .image2 {
+    animation: throwAndTransform 2s forwards;
+    animation-delay: 1s;  
+    opacity: 1;
+    transform: scale(1);
+}
+
+.image-container-grid{
+    border: 3px solid #cb9494; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px; 
+    overflow: hidden; 
+    padding: 10px; 
+}
+
+.image-container-grid img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+}
+
+.card {
+    text-align: center;
+}
+.column-bg {
+     background: linear-gradient(to right, rgb(194, 207, 187), rgb(144, 156, 208), rgb(186, 177, 157));
+    padding: 20px; 
+    border-radius: 10px; 
+}
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
